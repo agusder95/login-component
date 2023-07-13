@@ -13,15 +13,15 @@ export const MainWrapper = styled.main`
 
 export const FormWrapper = styled.div`
   display: ${props => props.popup === true ? 'flex' : 'none'};
-  position: absolute;
-  top: 17%;
-  background-color:white;
-  width: 90%;
-  height: 300px;
-  padding: 1rem;
-  display: flex;
   flex-direction: column;
   align-items:center;
+  position: absolute;
+  border-radius:10px;
+  top: 17%;
+  background-color:white;
+  width: 50%;
+  height: 400px;
+  padding: 1rem;
 `;
 
 export const FormContainer = styled.form`

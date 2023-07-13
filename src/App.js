@@ -1,14 +1,17 @@
 import { AppWrapper } from "./AppStyle";
 import Header from "./components/header";
 import Main from "./components/main";
+import { InfoLoginProvider } from "./context/infoLogin";
 import { ShowElementsProvider } from "./context/showElements";
 
 function App() {
   return (
     <AppWrapper>
       <ShowElementsProvider>
-        <Header/>
-        <Main />
+        <InfoLoginProvider>
+          <Header/>
+          <Main />
+        </InfoLoginProvider>
       </ShowElementsProvider>
     </AppWrapper>    
   );
